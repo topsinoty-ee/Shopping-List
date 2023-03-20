@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public Scanner scanner = new Scanner(System.in);
-    BrowsingItems items = new BrowsingItems();
+    ItemHandler items = new ItemHandler();
 
     public static void main(String[] args) {
         Main main = new Main();
@@ -16,7 +16,7 @@ public class Main {
         String itemName = scanner.next().toLowerCase();
         System.out.print("How many: ");
         int itemQuantity = scanner.nextInt();
-        System.out.print("How much: $");
+        System.out.print("How much: £");
         float itemCost = scanner.nextFloat();
 
         System.out.println(items.showItem(itemName, itemCost, itemQuantity));
