@@ -35,7 +35,8 @@ public class ItemHandler {
     public void itemQuantity(int quantity) {
         numberOfItems.add(quantity);
     }
-    public void multipliedItemCosts(float multiplied){
+
+    public void multipliedItemCosts(float multiplied) {
         multipliedItemCosts.add(multiplied);
     }
 }

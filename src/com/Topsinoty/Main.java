@@ -21,11 +21,7 @@ public class Main {
                 hasMoreItems = true;
             } else if (yesOrNo.equals("no") || yesOrNo.equals("n")) {
                 //showItems
-
                 main.getValueFromArray();
-//                System.out.println(main.items.itemNames);
-//                System.out.println(main.items.itemCosts);
-//                System.out.println(main.items.numberOfItems);
                 break;
             }
         } while (hasMoreItems);
@@ -45,11 +41,6 @@ public class Main {
         System.out.print("How much: £");
         float itemCost = scanner.nextFloat();
         items.itemCost(itemCost);
-
-//            System.out.println(items.itemNames);
-//            System.out.println(items.itemCosts);
-//            System.out.println(items.numberOfItems);
-
     }
 
     public void getValueFromArray() {
@@ -57,6 +48,6 @@ public class Main {
             String result = items.showItem(items.itemNames.get(i), items.itemCosts.get(i), items.numberOfItems.get(i));
             System.out.println("You have bought " + result);
         }
-        System.out.print("Total costs: "+items.getTotalCosts(items.multipliedItemCosts));
+        System.out.print("Total costs: " + items.getTotalCosts(items.multipliedItemCosts));
     }
 }
