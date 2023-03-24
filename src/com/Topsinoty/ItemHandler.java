@@ -19,8 +19,8 @@ public class ItemHandler {
 
     public String getTotalCosts(List<Float> totalCosts) {
         float total = 0;
-        for (Float d : totalCosts)
-            total += d;
+        for (Float cost : totalCosts)
+            total += cost;
         return NumberFormat.getCurrencyInstance().format(total);
     }
 
